@@ -26,8 +26,8 @@ func QuicksortIntTupleFirst(a []IntTuple) []IntTuple {
 
 	a[left], a[right] = a[right], a[left]
 
-	QuicksortIntPairFirst(a[:left])
-	QuicksortIntPairFirst(a[left+1:])
+	QuicksortIntTupleFirst(a[:left])
+	QuicksortIntTupleFirst(a[left+1:])
 
 	return a
 }
@@ -54,8 +54,8 @@ func QuicksortIntTupleSecond(a []IntTuple) []IntTuple {
 
 	a[left], a[right] = a[right], a[left]
 
-	QuicksortIntPairSecond(a[:left])
-	QuicksortIntPairSecond(a[left+1:])
+	QuicksortIntTupleSecond(a[:left])
+	QuicksortIntTupleSecond(a[left+1:])
 
 	return a
 }
@@ -82,8 +82,8 @@ func QuicksortIntTupleThird(a []IntTuple) []IntTuple {
 
 	a[left], a[right] = a[right], a[left]
 
-	QuicksortIntPairSecond(a[:left])
-	QuicksortIntPairSecond(a[left+1:])
+	QuicksortIntTupleThird(a[:left])
+	QuicksortIntTupleThird(a[left+1:])
 
 	return a
 }

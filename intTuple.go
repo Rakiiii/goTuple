@@ -1,6 +1,6 @@
 package gotuple
 
-type IntTyple struct{
+type IntTuple struct{
 	First,Second,Third int
 }
 
@@ -62,7 +62,7 @@ func QuicksortIntTupleSecond(a []IntTuple) []IntTuple {
 
 //QuicksortIntTupleThird sort slice of IntTuple from low to high value of @IntTuple.Third with quicksort algorithm
 //returns sorted slice
-func QuicksortIntTupleSecond(a []IntTuple) []IntTuple {
+func QuicksortIntTupleThird(a []IntTuple) []IntTuple {
 	if len(a) < 2 {
 		return a
 	}
